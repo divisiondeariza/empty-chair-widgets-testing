@@ -1,0 +1,53 @@
+{
+    "chart": {
+        "type": "lineChart",
+        "height": 250,
+        "margin": {
+            "top": 30,
+            "right": 20,
+            "bottom": 40,
+            "left": 55
+        },
+        "useInteractiveGuideline": true,
+        "dispatch": {},
+        "xAxis": {
+            "axisLabel": "Fecha",
+            "showMaxMin": false
+        },
+        "yAxis": {
+            "axisLabel": "frencuencia de uso semanal",
+            "axisLabelDistance": -10,
+            "showMaxMin": false
+        },
+        "color": [
+            "#fde01c",
+            "#f29520",
+            "#f172a0",
+            "#e63948",
+            "#887ee0",
+            "#44a650",
+            "#30a2c9"
+        ],
+        "duration": 1000
+    },
+    "title": {
+        "enable": false,
+        "text": "Title for Line Chart"
+    },
+    "subtitle": {
+        "enable": false,
+        "text": "Subtitle for simple line chart. Lorem ipsum dolor sit amet, at eam blandit sadipscing, vim adhuc sanctus disputando ex, cu usu affert alienum urbanitas.",
+        "css": {
+            "text-align": "center",
+            "margin": "10px 13px 0px 7px"
+        }
+    },
+    "caption": {
+        "enable": true,
+        "html": "Análisis de 3528 tweets de Germán Vargas Lleras (@German_Vargas) entre diciembre de 2015 y enero de 2018",
+        "css": {
+            "text-align": "center",
+            "margin": "10px 13px 0px 7px"
+        }
+    }
+}

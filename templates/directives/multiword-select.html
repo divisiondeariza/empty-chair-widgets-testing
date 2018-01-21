@@ -1,0 +1,32 @@
+<div class="multiword-select container-fluid">
+	<div class="row multiword-select-alert">
+		<div uib-alert ng-repeat="alert in alerts" 
+			 class="alert-danger"
+			 close="closeAlert($index)"
+			 dismiss-on-timeout="5000">
+			 <span ng-bind="alert.msg"></span>	 
+		</div>		
+	</div>
+
+	<div class="row multiword-content">
+		<div class= "category" 
+			 ng-class= "isCategorized?'col-sm-6':''" 
+			 ng-repeat="category in categories">
+			<fieldset>
+				<legend ng-bind="category"></legend>
+				<div>
+					<span ng-repeat="wordData in words| filter:category:true:category">
+						<a ng-bind="wordData.word"
+						   ng-class="isSelected(wordData)?'selected':''"
+							ng-click="toggleWord(wordData)">
+							
+						</a>
+					</span>
+				</div>
+			</fieldset>			
+		</div>
+	</div>
+
+
+</div>
+
